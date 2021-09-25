@@ -1,0 +1,118 @@
+
+@import "movimiento";
+@import "colorDeFondo";
+@import "margenes";
+
+.colorDeLetra {
+    color:black;
+    
+  }
+  *{
+    margin: auto;
+    padding: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+  
+  
+
+  .body {
+    background: linear-gradient(23deg, #000000, black);
+  }
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .flex {
+    display: flex;
+
+}
+.zapatos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: inline;
+}
+
+
+.centrar {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+
+}
+
+.linea {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.normal {
+    font-style: normal;
+}
+
+.textoGrande {
+    font-size: 100px;
+}
+
+.textoNormal{
+  font-size: 28px;
+}
+
+.acomodarInfo1{
+  text-align: center;
+}
+.acomodarInfo2{
+  margin-left:510px;
+}
+.acomodarInfo3{
+  margin-left: 358px;
+}
+
+.acomodarComentarios{
+  text-align: right;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .body {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .body {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+.body{
+  grid-template-columns: repeat(4, 1fr);
+}
+}
